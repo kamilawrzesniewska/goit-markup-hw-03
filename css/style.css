@@ -14,7 +14,36 @@ body {
     font-family: var(--main-font);
 }
 
-/* HEADER */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {margin: 0;
+    padding: 0;}
+ul,
+ol {padding: 0;
+    margin: 0;}
+p {
+    padding:0;}
+
+img{display: block;}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+}
+.section:not(:last-child) {padding-bottom: 94px;}
+
+/* HEADER */ 
+.header-main .container {
+    display: flex;
+}
+.navigation { display: flex;}
+
 .logo{ color: var(--main-black);
        font-weight: 700;
        font-family: var(--secondary-font);
