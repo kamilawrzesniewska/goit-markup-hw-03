@@ -99,8 +99,13 @@ p {
     margin-left: auto;
     margin-right: 50px;
 }
+.address-mail {
+    margin-right: 41px ;
+}
 
-.address-mail .address-phone {
+
+.address-mail,
+.address-phone {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -108,11 +113,17 @@ p {
     letter-spacing: 2%;
     color: var(--main-grey);
     text-decoration: none;
-    }
+}
+
 .address-mail:hover,
-.address-mail:focus {color: var(--main-color);}
+.address-mail:focus {
+    color: var(--main-color);
+}
+
 .address-phone:hover,
-.address-phone:focus{color: var(--main-color);}
+.address-phone:focus {
+    color: var(--main-color);
+}
 
 /* END HEADER */
  
@@ -157,7 +168,17 @@ p {
     margin-left: auto;
 }
 /* end hero*/
+
 /* agencja*/
+.agency  {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.agency .agency-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 .agency-box{list-style: none;}
 .header-three{
     font-style: bold;
@@ -177,6 +198,15 @@ p {
 /* end agencja*/
 /*portfolio*/
 .portfolio-list{list-style: none;}
+
+.portfolio {
+    display: flex;
+}
+.portfolio .portfolio-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-two{
     font-style: bold;
     font-weight: 700;
@@ -184,10 +214,21 @@ p {
     line-height: 1.167;
     letter-spacing: 3%;
     color: var(--main-black);
+    text-align: center;
+    margin-bottom: 30px;
+  
 }
 /* end portfolio*/
 /*kontakt*/
 .contact-list{list-style: none;}
+
+.contact{
+    display: flex;}
+
+.contact .contact-list {
+    display: flex;
+    justify-content: space-between;
+}
 .header-three-contact{
     font-style: medium;
     font-weight: 500;
