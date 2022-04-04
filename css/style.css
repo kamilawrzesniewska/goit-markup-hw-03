@@ -8,6 +8,7 @@
       --white: #ffffff;
       --black: #000000;
       --btn-backround: #f5f4fa;
+      --border-color: #ececec;
       }
 
 body {
@@ -27,6 +28,10 @@ ol {padding: 0;
 p {
     padding:0;}
 
+img{
+    display: block;
+}
+
 
 .container{
     width: 1200px;
@@ -35,6 +40,7 @@ p {
     margin: 0 auto;
     }
 
+    
 /* HEADER */ 
 .header .container{
     display: flex;
@@ -128,6 +134,7 @@ p {
 /* END HEADER */
  
 /* MAIN */
+
 /* hero*/
 .hero {background-color: var(--color-backgroudn);
        padding-top: 200px;
@@ -179,6 +186,10 @@ p {
     justify-content: space-between;
 }
 
+.agency .agency-box-box {
+    width: calc((100%- 3*30px)/4); 
+}
+
 .agency-box{list-style: none;}
 .header-three{
     font-style: bold;
@@ -187,6 +198,7 @@ p {
     line-height: 1.143;
     letter-spacing: 3%;
     color: var(--main-black);
+    margin-bottom: 10px;
 }
 .description-text{
     font-weight: 400; 
@@ -195,6 +207,8 @@ p {
     letter-spacing: 3%;
     color: var(--main-grey);
 }
+
+
 /* end agencja*/
 /*portfolio*/
 .portfolio-list{list-style: none;}
@@ -223,31 +237,49 @@ p {
 .contact-list{list-style: none;}
 
 .contact{
-    display: flex;}
+    display: flex;
+    background-color: #f5f4fa;}
 
 .contact .contact-list {
     display: flex;
     justify-content: space-between;
 }
+.contact-list-item {background-color: #ffffff;}
+
+.contact .container {margin-top: 100px;}
+
 .header-three-contact{
     font-style: medium;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
     letter-spacing: 3%;
+    text-align: center;
     color: var(--main-black);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .description-text-contact{
     font-weight: 400; 
     font-size: 16px;
     line-height: 1.186;
     letter-spacing: 3%;
+    text-align: center;
     color: var(--main-grey);
 }
 
 /*end kontakt*/
 /* END MAIN */
-.endpage{background-color: var(--color-backgroudn);}
+.endpage{background-color: var(--color-backgroudn);
+padding-top: 60px;
+padding-bottom: 60px;}
+
+.logoend { margin-bottom: 20px;}
+.address-mail .address-phone:not(last-child)
+{
+    margin-bottom: 9px;
+}
+.address{ margin-top: 9px}
 .address{ color: var(--white);
     font-family: var(--main-font);
     font-weight: 400;
@@ -290,13 +322,47 @@ p {
     background-color: var(--btn-backround);
 }
 
+.porfolio-btn {
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
+.btn-list {margin-bottom: 50px;
+display: flex;
+justify-content: center;}
+
+.btn-list-item {
+    text-align: center;
+    border-style: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+
 .btn-list-text:hover,
 .btn-list-text:focus{
     background-color: var(--main-color);
     color: var(--white);
     cursor: pointer;
 }
-.main-list{list-style: none;}
+.main-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-list-item {
+    width: calc((100%/3));
+    margin-top: 30px;
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 20px 24px;
+  }
+
+.main-list-item :nth-last-child()
+{margin-right: 30px;}
+
+
 .main-list-header{
     font-weight: 700;
     font-style: bold;
