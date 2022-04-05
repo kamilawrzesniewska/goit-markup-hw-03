@@ -48,12 +48,11 @@ img{
 
     
 /* HEADER */ 
+
 .header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
     }
 
 .navigation{ 
@@ -149,10 +148,9 @@ img{
        padding-bottom: 210px;
 }
 .hero .container {
-    max-width: 696px;
     text-align: center;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; 
 }
 .main-header{
     font-family: var(--secondary-font);
@@ -219,6 +217,8 @@ img{
 
 /* end agencja*/
 /*portfolio*/
+
+
 .portfolio-list{
    list-style: none;
    margin-bottom: 94px;
@@ -231,7 +231,8 @@ img{
 .portfolio .portfolio-list {
     display: flex;
     justify-content: space-between;
-}
+    }
+
 
 .header-two{
     font-style: bold;
@@ -246,16 +247,20 @@ img{
 }
 /* end portfolio*/
 /*kontakt*/
+
+
 .contact-list{list-style: none;}
 
 .contact{
     display: flex;
-    background-color: var(--btn-backround);}
+    background-color: var(--btn-backround);
+    }
 
 .contact .contact-list {
     display: flex;
     justify-content: space-between;
 }
+
 .contact-list-item {background-color: var(--white);}
 
 .contact .container {margin-top: 100px;}
@@ -369,17 +374,21 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+    margin-bottom: 94px;
+    }
 
 .main-list-item {
     width: calc((100%/3));
-    margin-top: 30px;
+    margin-top: 50px;
     border-bottom: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
-    padding: 20px 24px;
-  }
+    border-top: 1px solid var(--border-color);
+    width: 370px;
+    }
 
+ img {margin-bottom: 20px;}
+      
 .main-list-item :nth-last-child()
 {margin-right: 30px;}
 
@@ -391,6 +400,8 @@ justify-content: center;
     line-height: 2;
     letter-spacing: 6%;
     color: var(--main-black);
+    margin-left: 24px;
+    margin-bottom: 4px;
 }
 .main-list-text{
     font-weight: 400;
@@ -399,4 +410,5 @@ justify-content: center;
     line-height: 1.875;
     letter-spacing: 3%;
     color: var(--main-grey);
+    margin-left: 24px;
 }
