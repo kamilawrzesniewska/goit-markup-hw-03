@@ -262,6 +262,7 @@ img{
 .contact .contact-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 94px;
 }
 
 .contact-list-item {background-color: var(--white);}
